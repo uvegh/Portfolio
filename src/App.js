@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// cls
+import "./Sass/styles.css";
+import Home from "./components/Home";
+
+import Navigation from "./components/Navigation";
+
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* everything wrapped has eccess to the blog provider */}
+
+    
+
+    <BrowserRouter>
+    {/* <Navigation/> */}
+<Routes>
+
+<Route path='/' element={<Home />}/>
+
+<Route path ='*' element={<NotFound />} />
+{/* dynamic route withsemicolon */}
+
+
+
+
+
+</Routes>
+ <Footer/>
+    </BrowserRouter>
+  
+    </>
+      
   );
 }
 

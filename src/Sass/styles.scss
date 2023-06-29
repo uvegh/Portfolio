@@ -1,0 +1,217 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+*{padding:0;margin:0; font-family: Raleway;scroll-behavior: smooth;font-size: 100%}
+@import './foooter';
+@import './starsBg';
+$dark:#232E35;
+$light:#F1F1F1;
+
+nav{
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+   
+    .navbar-brand{
+color: #2C40F2;
+    }
+
+    .nav-link{
+        color:#F1F1F1
+    }
+    ul{
+        margin: auto 
+    }
+    .moon{
+        height: 2rem;
+        width: 3rem;
+    }
+}
+
+.dark {
+    background:radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+
+
+  }
+  .light {
+    background-color: rgb(131, 124, 124);
+    color: #1f0e0e !important;
+  }
+
+.myHomePage{
+    color: $light;
+    margin-top: 3rem;
+    min-width: 100%;
+    min-height: 100%;
+    .intro{
+        color: $light;
+        .underline{
+
+            min-width: 2rem;
+            min-height:2rem;
+            background-color: #661616;
+        }
+        p{
+            color: #c9c5c5;
+            font-family: monospace;
+            
+        }
+        h4{
+          font-weight: 600;
+            margin-top: 1em;
+span{
+    color: #7E74F1;
+}
+        }
+        .about-me{
+            text-align: left;
+            text-align: justify;
+            font-size: 0.8em;
+            font-family: monospace;
+        }
+        footer{
+           background-color: inherit;
+            a{
+                color:  #F1F1F1 ;
+                background-color: inherit;
+                font-size: 1rem;
+                &:hover{
+                    scale: 1.2;
+                    filter: blur(10%);
+                    transition: all 2ms ease-in-out;
+                }
+            }
+        }
+
+    section{
+        .profile{
+            margin-left: 0.5rem;
+border-radius: 1rem;
+width: 70%;
+z-index: 3;
+        }
+
+
+        }
+    }
+.services{
+    p{
+        color:#232E35
+    }
+    img{
+        width: 5em;
+        height:5em
+    }
+    .service{
+        min-height: 18.6rem;
+    }
+}
+
+.Portfolio{
+
+    header{
+        span{
+            min-width:20px;
+            background-color: #232E35;
+        }
+        h4{
+            color: #232E35
+        }
+    }
+    .img-container{max-width: 100%;}
+    img{min-height: 15rem !important; max-width: 100% !important; max-height: 100% !important; max-height: 15rem !important;}
+    .imgOverlay{
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+      }
+
+      footer{
+        min-height: 40%;
+        padding-top: 1rem;
+        background-color: #F1F1F1;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color:$dark;
+        font-size: smaller;
+        text-align: left;
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{border:0.5px solid $dark; border-radius: 0.2em;min-height: 1rem; min-width: 3.5rem; padding: 0.5em;}
+}
+       .btn-primary{background-color: $dark;
+    color: $light;
+border: none;
+}
+      }
+}
+}
+.experience{
+    color:$light;
+    ul{list-style: none;
+      
+}
+    .rework{
+        width: 8rem;
+        height: 2.5rem;
+    }
+    .tags{
+        display: flex;
+            justify-content: space-evenly;
+        p{
+            border: 1px solid $light ;
+            padding:0.8em;
+    border-radius: 0.2em;
+            font-size: smaller;
+        }
+    }
+   
+}
+
+@media( width<=1200px){
+    .experience{
+        .tags{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+       
+    }
+}
+@media (width<=766px) {
+    .experience{
+        text-align: center !important;
+        .rework{
+            width: 50%;
+            height: 50%;
+            margin: auto !important;
+        }
+    .arrow-experience{
+        display: none;
+    }
+    footer{
+        margin-top: 0.5em;
+    }
+}   
+}
+@media(width<=574px){
+    .Portfolio{
+        .row{
+            display: grid !important;
+            grid-gap: 1.5rem;
+            grid-template-columns: auto !important;
+        }
+        footer{
+            section{
+                width: 90% !important;
+            }
+        }
+    }
+    .services{
+        .row{
+            display: grid !important;
+            grid-gap: 1.5rem;
+            grid-template-columns: auto !important;
+        }
+    }
+}

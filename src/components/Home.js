@@ -302,7 +302,7 @@ document.body.className=lightMode
 <p>React</p> <p>Node</p><p>Express</p> <p>MongoDB</p>
                   </section>
                  
-                  <a  className="text-decoration-none text-light btn btn-primary mb-2" target="blank" href="https://uvegh.github.io/SASSIHOLFORDUI/">
+                  <a  className="text-decoration-none text-light btn btn-primary mb-2" target="blank" href="https://gavohms.netlify.app/">
                   View
                   </a>
                
@@ -325,7 +325,7 @@ document.body.className=lightMode
                   <section className="tags">
                   <p>React</p> <p>Node</p><p>Express</p> <p>MongoDB</p>
                   </section>
-                  <a  className="text-decoration-none text-light btn btn-primary mb-2" target="blank" href="https://uvegh.github.io/SASSIHOLFORDUI/">
+                  <a  className="text-decoration-none text-light btn btn-primary mb-2" target="blank" href="https://centeblog.netlify.app/">
                   View
                   </a>
                   </section>
